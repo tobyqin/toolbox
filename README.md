@@ -37,7 +37,7 @@ MouseInc可以让你在任何程序使用鼠标手势，而不仅限于浏览器
 
 当我招到MouseInc有种泪流满面的感觉，我又可以愉快地用鼠标手势了，而且不仅仅在浏览器中。
 
-MouseInc的配置：
+**MouseInc的配置：**
 
 默认的MouseInc手势配置和我们常见的手势并不一样，所以你可以和我一样，需要进行一些修改。
 
@@ -49,7 +49,7 @@ MouseInc的配置：
 SuperDrag=0
 ```
 
-关闭超级拖拽，因为按住alt键加鼠标左键在很多IDE中是选择纵向选择的作用
+关闭超级拖拽，因为按住alt键加鼠标左键在很多IDE中是选择纵向选择的作用。
 
 ```
 [SuperKey]
@@ -58,22 +58,12 @@ SuperDrag=0
 explorer.exe
 ```
 
-在文件管理器中关闭鼠标手势，因为我需要默认的右键选择拖动。
+在文件管理器中关闭鼠标手势，因为我需要默认的右键选择拖放行为。
 
 ```
 [GlobalGesture]
 ;全局鼠标手势设置，支持的手势方向：↑↓←→↗↘↙↖
 ;格式为：方向=动作，动作在 Script\Gesture.lua 中定义
-;→←=Calc
-;↑=TopWindow
-;↓=NoTopWindow
-;→↓=MinimizeWindow
-;→↑=MaximizeWindow
-;←→=RestoreWindow
-;→=CloseWindow
-;←=CloseSimilarWindow
-;↑↓=CenterWindow
-;→↓←=Exit
 ↓=MinimizeWindow
 ↑=MaximizeWindow
 ↓→=CloseTab
@@ -91,4 +81,4 @@ explorer.exe
 ↓←=ReopenTab
 ↓↑=Refresh
 ```
-修改为常见和我觉得顺手的鼠标手势。
+修改为常见和我觉得顺手的鼠标手势，精简掉很多记不住的手势。
